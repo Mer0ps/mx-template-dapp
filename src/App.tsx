@@ -21,6 +21,7 @@ import { RouteNamesEnum } from 'localConstants';
 import { PageNotFound, Unlock } from 'pages';
 import { routes } from 'routes';
 import { BatchTransactionsContextProvider } from 'wrappers';
+import { MetaMaskProvider } from 'hooks/MetamaskContext';
 
 const AppContent = () => {
   return (
@@ -78,11 +79,13 @@ export const App = () => {
       <AxiosInterceptorContext.Interceptor
         authenticatedDomanis={sampleAuthenticatedDomains}
       >
-        <Router>
-          <BatchTransactionsContextProvider>
-            <AppContent />
-          </BatchTransactionsContextProvider>
-        </Router>
+        <MetaMaskProvider>
+          <Router>
+            <BatchTransactionsContextProvider>
+              <AppContent />
+            </BatchTransactionsContextProvider>
+          </Router>
+        </MetaMaskProvider>
       </AxiosInterceptorContext.Interceptor>
     </AxiosInterceptorContext.Provider>
   );

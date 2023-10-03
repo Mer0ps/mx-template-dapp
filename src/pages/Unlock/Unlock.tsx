@@ -8,6 +8,7 @@ import type {
 import {
   ExtensionLoginButton,
   LedgerLoginButton,
+  MetamaskWalletLoginButton,
   OperaWalletLoginButton,
   WalletConnectLoginButton,
   WebWalletLoginButton
@@ -54,6 +55,10 @@ export const Unlock = () => {
             />
             <OperaWalletLoginButton
               loginButtonText='Opera Crypto Wallet - Beta'
+              {...commonProps}
+            />
+            <MetamaskWalletLoginButton
+              loginButtonText='Metamask Crypto Wallet'
               {...commonProps}
             />
             <WebWalletLoginButton
