@@ -1,4 +1,5 @@
 import { getSnaps } from "@merops/mx-sdk-js-metamask-provider/out";
+import detectEthereumProvider from "@metamask/detect-provider";
 
   
 /**
@@ -7,8 +8,10 @@ import { getSnaps } from "@merops/mx-sdk-js-metamask-provider/out";
  * @returns True if the MetaMask version supports Snaps, false otherwise.
  */
 export const detectSnaps = async () => {
+  console.log("detectSnaps");
   if (window.ethereum?.detected) {
     for (const provider of window.ethereum.detected) {
+      console.log(provider);
       try {
         // Detect snaps support
         await getSnaps();
@@ -26,6 +29,7 @@ export const detectSnaps = async () => {
   }
 
   if (window.ethereum?.providers) {
+    console.log("window.ethereum");
     for (const provider of window.ethereum.providers) {
       try {
         // Detect snaps support
@@ -41,6 +45,14 @@ export const detectSnaps = async () => {
   }
 
   try {
+    console.log("try");
+    const provider = (await detectEthereumProvider({
+      mustBeMetaMask: false,
+      silent: true,
+    })) as any | undefined;
+    console.log(provider);
+    const isFlask = (await provider?.request({ method: 'web3_clientVersion' }))?.includes('flask');
+    console.log(isFlask);
     await getSnaps();
 
     return true;

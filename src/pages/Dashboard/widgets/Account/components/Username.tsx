@@ -1,4 +1,4 @@
-import type { AccountType } from '@multiversx/sdk-dapp/types';
+import type { AccountType } from '@merops/sdk-dapp/types';
 import { Label } from 'components/Label';
 import { trimUsernameDomain } from 'helpers/sdkDappHelpers';
 import { ProfileType } from 'types';

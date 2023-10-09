@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useGetTimeToPong } from '../useGetTimeToPong';
 
 beforeEach(() => {
-  jest.mock('@multiversx/sdk-dapp/hooks/useGetNetworkConfig', () => ({
+  jest.mock('@merops/sdk-dapp/hooks/useGetNetworkConfig', () => ({
     useGetNetworkConfig: jest.fn().mockReturnValue({
       network: { apiAddress: 'https://devnet-api.multiversx.com' }
     })

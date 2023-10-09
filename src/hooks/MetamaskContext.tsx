@@ -9,6 +9,7 @@ import {
 import { Snap } from '@merops/mx-sdk-js-metamask-provider/out/types';
 import { getSnap } from '@merops/mx-sdk-js-metamask-provider/out';
 import { detectSnaps, isFlask } from './metamask';
+import { useHasMetamaskFlask } from './useMetamaskFlask';
   
   export type MetamaskState = {
     snapsDetected: boolean;
@@ -81,6 +82,7 @@ import { detectSnaps, isFlask } from './metamask';
     }
   
     const [state, dispatch] = useReducer(reducer, initialState);
+    const { hasMetamaskFlask } = useHasMetamaskFlask();
   
     // Find MetaMask Provider and search for Snaps
     // Also checks if MetaMask version is Flask

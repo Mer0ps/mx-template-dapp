@@ -51,6 +51,8 @@ const AppContent = () => {
         }
       }}
     >
+      
+      <MetaMaskProvider>
       <AxiosInterceptorContext.Listener>
         <Layout>
           <TransactionsToastList />
@@ -69,6 +71,8 @@ const AppContent = () => {
           </Routes>
         </Layout>
       </AxiosInterceptorContext.Listener>
+      
+      </MetaMaskProvider>
     </DappProvider>
   );
 };
@@ -79,13 +83,11 @@ export const App = () => {
       <AxiosInterceptorContext.Interceptor
         authenticatedDomanis={sampleAuthenticatedDomains}
       >
-        <MetaMaskProvider>
           <Router>
             <BatchTransactionsContextProvider>
               <AppContent />
             </BatchTransactionsContextProvider>
           </Router>
-        </MetaMaskProvider>
       </AxiosInterceptorContext.Interceptor>
     </AxiosInterceptorContext.Provider>
   );

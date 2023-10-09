@@ -3,7 +3,7 @@ import {
   deleteTransactionToast,
   removeAllSignedTransactions,
   removeAllTransactionsToSign
-} from '@multiversx/sdk-dapp/services/transactions/clearTransactions';
+} from '@merops/sdk-dapp/services/transactions/clearTransactions';
 import { contractAddress } from 'config';
 import { refreshAccount, sendTransactions } from 'helpers';
 import { useTrackTransactionStatus } from 'hooks/sdkDappHooks';
