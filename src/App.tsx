@@ -21,7 +21,6 @@ import { RouteNamesEnum } from 'localConstants';
 import { PageNotFound, Unlock } from 'pages';
 import { routes } from 'routes';
 import { BatchTransactionsContextProvider } from 'wrappers';
-import { MetaMaskProvider } from 'hooks/MetamaskContext';
 
 const AppContent = () => {
   return (
@@ -52,7 +51,6 @@ const AppContent = () => {
       }}
     >
       
-      <MetaMaskProvider>
       <AxiosInterceptorContext.Listener>
         <Layout>
           <TransactionsToastList />
@@ -72,7 +70,6 @@ const AppContent = () => {
         </Layout>
       </AxiosInterceptorContext.Listener>
       
-      </MetaMaskProvider>
     </DappProvider>
   );
 };
