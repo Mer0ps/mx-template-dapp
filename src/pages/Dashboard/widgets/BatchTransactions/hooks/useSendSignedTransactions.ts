@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { TransactionBatchStatusesEnum } from '@multiversx/sdk-dapp/types/enums.types';
+import { TransactionBatchStatusesEnum } from '@merops/sdk-dapp/types/enums.types';
 import {
   useSendBatchTransactions,
   useGetSignedTransactions

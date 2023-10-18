@@ -9,8 +9,9 @@
     "@fortawesome/fontawesome-svg-core": "6.4.0",
     "@fortawesome/free-solid-svg-icons": "6.4.0",
     "@fortawesome/react-fontawesome": "0.2.0",
+    "@merops/mvx-snap": "^0.1.0",
+    "@merops/sdk-dapp": "^2.22.5",
     "@multiversx/sdk-core": "12.11.0",
-    "@multiversx/sdk-dapp": "2.22.5",
     "@multiversx/sdk-network-providers": "2.0.0",
     "axios": "0.24.0",
     "classnames": "2.3.2",
@@ -77,8 +78,5 @@
     "vite-plugin-node-polyfills": "0.14.1",
     "vite-plugin-svgr": "4.0.0",
     "vite-tsconfig-paths": "4.2.1"
-  },
-  "resolutions": {
-    "**/*/nth-check": "2.0.1"
   }
 }

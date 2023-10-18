@@ -6,7 +6,7 @@ import {
   faArrowsRotate
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useGetSignMessageSession } from '@multiversx/sdk-dapp/hooks/signMessage/useGetSignMessageSession';
+import { useGetSignMessageSession } from '@merops/sdk-dapp/hooks/signMessage/useGetSignMessageSession';
 import { Button } from 'components/Button';
 import { OutputContainer } from 'components/OutputContainer';
 import { useGetLastSignedMessageSession, useSignMessage } from 'hooks';

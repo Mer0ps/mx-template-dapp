@@ -1,1 +1,1 @@
-export { DECIMALS, GAS_PRICE, GAS_LIMIT } from '@multiversx/sdk-dapp/constants';
+export { DECIMALS, GAS_PRICE, GAS_LIMIT } from '@merops/sdk-dapp/constants';

@@ -43,13 +43,13 @@ const WIDGETS: WidgetsType[] = [
     reference:
       'https://docs.multiversx.com/sdk-and-tools/sdk-js/sdk-js-cookbook/#using-interaction-when-the-abi-is-available'
   },
-  {
-    title: 'Ping & Pong (Backend)',
-    widget: PingPongService,
-    description:
-      'Smart Contract interactions using the backend generated transactions',
-    reference: 'https://github.com/multiversx/mx-ping-pong-service'
-  },
+  // {
+  //   title: 'Ping & Pong (Backend)',
+  //   widget: PingPongService,
+  //   description:
+  //     'Smart Contract interactions using the backend generated transactions',
+  //   reference: 'https://github.com/multiversx/mx-ping-pong-service'
+  // },
   {
     title: 'Sign message',
     widget: SignMessage,

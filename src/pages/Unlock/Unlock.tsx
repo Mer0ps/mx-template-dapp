@@ -4,10 +4,12 @@ import type {
   OperaWalletLoginButtonPropsType,
   LedgerLoginButtonPropsType,
   WalletConnectLoginButtonPropsType
-} from '@multiversx/sdk-dapp/UI';
+} from '@merops/sdk-dapp/UI';
+import { MetamaskWalletLoginButtonPropsType } from '@merops/sdk-dapp/UI/metamaskWallet/MetamaskWalletLoginButton';
 import {
   ExtensionLoginButton,
   LedgerLoginButton,
+  MetamaskWalletLoginButton,
   OperaWalletLoginButton,
   WalletConnectLoginButton,
   WebWalletLoginButton
@@ -21,7 +23,8 @@ type CommonPropsType =
   | ExtensionLoginButtonPropsType
   | WebWalletLoginButtonPropsType
   | LedgerLoginButtonPropsType
-  | WalletConnectLoginButtonPropsType;
+  | WalletConnectLoginButtonPropsType
+  | MetamaskWalletLoginButtonPropsType;
 
 const commonProps: CommonPropsType = {
   callbackRoute: RouteNamesEnum.dashboard,
@@ -54,6 +57,10 @@ export const Unlock = () => {
             />
             <OperaWalletLoginButton
               loginButtonText='Opera Crypto Wallet - Beta'
+              {...commonProps}
+            />
+            <MetamaskWalletLoginButton
+              loginButtonText='Metamask Crypto Wallet'
               {...commonProps}
             />
             <WebWalletLoginButton

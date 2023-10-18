@@ -1,9 +1,9 @@
 import {
   TRANSACTIONS_ENDPOINT,
   ACCOUNTS_ENDPOINT
-} from '@multiversx/sdk-dapp/apiCalls/endpoints';
-import { useGetNetworkConfig } from '@multiversx/sdk-dapp/hooks/useGetNetworkConfig';
-import { ExplorerLink } from '@multiversx/sdk-dapp/UI/ExplorerLink';
+} from '@merops/sdk-dapp/apiCalls/endpoints';
+import { useGetNetworkConfig } from '@merops/sdk-dapp/hooks/useGetNetworkConfig';
+import { ExplorerLink } from '@merops/sdk-dapp/UI/ExplorerLink';
 import { Label } from 'components/Label';
 import { FormatAmount } from 'components/sdkDappComponents';
 import { SignedTransactionType } from 'types';

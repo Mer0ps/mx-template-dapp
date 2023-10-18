@@ -4,8 +4,8 @@ import {
   faArrowsRotate
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useGetBatches } from '@multiversx/sdk-dapp/hooks/transactions/batch/useGetBatches';
-import { sendBatchTransactions } from '@multiversx/sdk-dapp/services/transactions/sendBatchTransactions';
+import { useGetBatches } from '@merops/sdk-dapp/hooks/transactions/batch/useGetBatches';
+import { sendBatchTransactions } from '@merops/sdk-dapp/services/transactions/sendBatchTransactions';
 import { Button } from 'components/Button';
 import {
   OutputContainer,
